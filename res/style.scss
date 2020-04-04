@@ -123,6 +123,7 @@ body {
                             padding: 12px;
                             box-sizing: border-box;
                             input {
+                                vertical-align: top;
                                 width: 100%;
                                 height: 100%;
                                 border: none;
@@ -157,9 +158,25 @@ body {
             display: flex;
             flex-direction: row;
             aside {
-                width: 240px;
-                flex: 0 0 240px;
+                flex: 0 0 90px;
                 background: $color-background-third;
+                >ul:first-child {
+                    padding-top: 15px;
+                }
+                ul {
+                    list-style: none;
+                    li {
+                        a {
+                            text-decoration: none;
+                            height: 60px;
+                            padding: 0;
+                            margin: 0;
+                            display: block;
+                            width: 100%;
+                            color: $color-text;
+                        }
+                    }
+                }
             }
             article {
                 flex-grow: 1;
