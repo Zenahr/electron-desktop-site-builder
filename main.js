@@ -16,7 +16,7 @@ function createWindow() {
     mainWindow.getNativeWindowHandle()
 
     // and load the index.html of the app.
-    mainWindow.loadFile('index.html')
+    mainWindow.loadFile('vue-test.html')
 
 
     // Open the DevTools.
