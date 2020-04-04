@@ -88,26 +88,36 @@ body x-tab nav .controls {
 }
 body x-tab nav .navigation {
   flex: 0 0 50px;
+  height: 50px;
   background: #413570;
 }
 body x-tab nav .navigation ul {
   width: 100%;
   height: 100%;
   list-style: none;
-  text-decoration: none;
   display: flex;
   padding: 0;
   margin: 0;
   flex-direction: row;
+  padding: 0 0;
 }
-body x-tab nav .navigation ul li {
+body x-tab nav .navigation ul li a {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 20px;
+  text-decoration: none;
+  text-align: center;
   display: inline-block;
   color: #f2f2f2;
   font-size: 18px;
-  line-height: 50px;
+  line-height: 53px;
+  transition: all 0.2s ease-in-out;
 }
-body x-tab nav .navigation ul li.nav-button {
+body x-tab nav .navigation ul li a.nav-button {
   flex: 0 0 50px;
+}
+body x-tab nav .navigation ul li a:hover {
+  background: #251e40;
 }
 body x-tab main {
   flex-grow: 1;
