@@ -1,0 +1,13 @@
+// Switch to master, pull latest commits and reset local repo with remote repo data
+
+// Make new branch
+git checkout -b newbranchname master
+
+commit as always...
+
+// check changes made
+git status
+
+// push to branch
+git push -u origin branchname
+(after the first push you can push everything else using just "git push")
