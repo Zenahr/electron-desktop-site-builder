@@ -27,7 +27,6 @@ body header ul {
 body header ul li {
   display: inline-block;
   height: 100%;
-  background: #251e40;
   line-height: 30px;
   font-family: "Raleway";
   font-size: 18px;
@@ -35,6 +34,15 @@ body header ul li {
   padding: 2px 8px;
   color: #f2f2f2;
   box-sizing: border-box;
+}
+body header ul li.active {
+  background: #251e40;
+}
+body header ul li:not(.active) {
+  background: #413570;
+}
+body header ul li:not(:first-child) {
+  margin-left: -4px;
 }
 body x-tab {
   display: flex;

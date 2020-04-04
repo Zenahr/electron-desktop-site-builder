@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 // Colors
 $color-header: #07020d;
-$color-tab: #251e40;
 $color-primary: #07020d;
 $color-secondary: #9994a6;
 $color-background: #251e40;
@@ -9,6 +8,8 @@ $color-background-secondary: #413570;
 $color-background-third: #269094;
 $color-text: #f2f2f2;
 $color-text-secondary: #d9d0c7;
+$color-tab: #251e40;
+$color-tab-active: $color-background-secondary;
 // Globals
 $header-font: "Raleway";
 $header-height: 30px;
@@ -40,7 +41,6 @@ body {
             li {
                 display: inline-block;
                 height: 100%;
-                background: $color-tab;
                 line-height: $header-height;
                 font-family: $header-font;
                 font-size: 18px;
@@ -48,6 +48,15 @@ body {
                 padding: 2px 8px;
                 color: $color-text;
                 box-sizing: border-box;
+                &.active {
+                    background: $color-tab;
+                }
+                &:not(.active) {
+                    background: $color-tab-active;
+                }
+                &:not(:first-child) {
+                    margin-left: -4px;
+                }
             }
         }
     }
