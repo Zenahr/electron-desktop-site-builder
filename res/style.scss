@@ -48,6 +48,7 @@ body {
                 padding: 2px 8px;
                 color: $color-text;
                 box-sizing: border-box;
+                vertical-align: top;
                 &.active {
                     background: $color-tab;
                 }
@@ -56,6 +57,10 @@ body {
                 }
                 &:not(:first-child) {
                     margin-left: -4px;
+                }
+                &.add-tab {
+                    background: transparent;
+                    font-size: 40px;
                 }
             }
         }

@@ -34,6 +34,7 @@ body header ul li {
   padding: 2px 8px;
   color: #f2f2f2;
   box-sizing: border-box;
+  vertical-align: top;
 }
 body header ul li.active {
   background: #251e40;
@@ -43,6 +44,10 @@ body header ul li:not(.active) {
 }
 body header ul li:not(:first-child) {
   margin-left: -4px;
+}
+body header ul li.add-tab {
+  background: transparent;
+  font-size: 40px;
 }
 body x-tab {
   display: flex;
