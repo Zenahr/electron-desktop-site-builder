@@ -135,13 +135,8 @@ body x-tab nav .navigation ul li a.nav-button {
 body x-tab nav .navigation ul li a:hover {
   background: #251e40;
 }
-body x-tab main {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: row;
-}
 body x-tab main aside {
-  flex: 0 0 90px;
+  width: 90px;
   background: #269094;
 }
 body x-tab main aside > ul:first-child {
@@ -149,17 +144,32 @@ body x-tab main aside > ul:first-child {
 }
 body x-tab main aside ul {
   list-style: none;
+  padding-left: 0;
+}
+body x-tab main aside ul li {
+  transition: all 0.125s ease-in-out;
+  width: auto;
+}
+body x-tab main aside ul li:hover {
+  background: #251e40;
 }
 body x-tab main aside ul li a {
+  cursor: default;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 20px;
   text-decoration: none;
-  height: 60px;
-  padding: 0;
-  margin: 0;
-  display: block;
-  width: 100%;
+  text-align: center;
+  display: inline-block;
   color: #f2f2f2;
+  font-size: 18px;
+  line-height: 53px;
 }
-body x-tab main article {
+
+main {
   flex-grow: 1;
-  background-color: #1b1b1bb0;
+  display: flex;
+  flex-direction: row;
+  background: white;
+  color: black;
 }
