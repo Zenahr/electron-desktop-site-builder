@@ -13,8 +13,11 @@ function createWindow() {
         }
     })
 
+    mainWindow.getNativeWindowHandle()
+
     // and load the index.html of the app.
     mainWindow.loadFile('index.html')
+
 
     // Open the DevTools.
     // mainWindow.webContents.openDevTools()
