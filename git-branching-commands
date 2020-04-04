@@ -11,3 +11,13 @@ git status
 // push to branch
 git push -u origin branchname
 (after the first push you can push everything else using just "git push")
+
+after finishing integration on the branch, do a pull request. and accept it on Github
+
+then do a symbolical commit to master like this:
+git checkout master
+git pull
+git pull origin newbranchname
+git push
+
+(branch test text)
