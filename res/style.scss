@@ -177,11 +177,22 @@ body {
                             vertical-align: top;
                             padding: 0 20px;
                             text-decoration: none;
+                            list-style: none;
                             text-align: center;
                             display: inline-block;
                             color: $color-text;
                             font-size: 18px;
                             line-height: $navigation-height + 3;
+                            span {
+                                cursor: default;
+                                display: inline-block;
+                                text-decoration: none;
+                                list-style: none;
+                                text-align: center;
+                                display: inline-block;
+                                color: $color-text;
+                                line-height: $navigation-height + 3;
+                            }
                         }
                     }
                 }
