@@ -104,6 +104,7 @@ body {
             flex-direction: column;
             .controls {
                 flex-grow: 1;
+                -webkit-app-region: drag;
             }
             .navigation {
                 flex: 0 0 $navigation-height;

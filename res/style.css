@@ -88,6 +88,7 @@ body x-tab nav {
 }
 body x-tab nav .controls {
   flex-grow: 1;
+  -webkit-app-region: drag;
 }
 body x-tab nav .navigation {
   flex: 0 0 50px;
